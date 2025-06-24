@@ -1,10 +1,29 @@
 # bun-hono-api-manually
 
+mkdir bun-hono-api
+cd bun-hono-api
+bun init -y
+
+bun-hono-api/
+├── index.ts        # Main routes
+├── server.ts       # Server bootstrap
+├── routes/
+│   └── user.ts     # More modular route files (optional)
+├── .gitignore
+├── bun.lockb
+└── package.json
+
 To install dependencies:
 
 ```bash
 bun install
 ```
+Install Bun (if not already):
+
+curl -fsSL https://bun.sh/install | bash
+Make sure Bun is available:
+
+bun --version
 
 To run:
 
